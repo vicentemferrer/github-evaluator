@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Evaluator</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/main.js" type="module"></script>
+</head>
+
+<body>
+  <main>
+    <section id="account-finder">
+      <h1>GitHub Evaluator</h1>
+      <form>
+        <div class="input-group">
+          <input type="text" id="username" name="username" placeholder="Enter a GitHub username" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </form>
+      <a href="#" id="back" class="disappear"><i class="fa-solid fa-arrow-left"></i></a>
+    </section>
+    <section id="account-data">
+
+    </section>
+  </main>
+  <footer>
+    &copy;<span id="year"></span> | Final Project | CSE 121b
+  </footer>
+</body>
+<script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://kit.fontawesome.com/466a0b8fee.js" crossorigin="anonymous"></script>
+
+</html>

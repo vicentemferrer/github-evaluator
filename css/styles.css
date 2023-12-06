@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Ubuntu+Condensed&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, rgba(2, 0, 36, 1) 61%, rgba(103, 25, 161, 1) 80%, rgba(220, 198, 243, 1) 100%);
+  background-repeat: no-repeat;
+  color: white;
+  font-family: Ubuntu, sans-serif;
+  font-size: 16px;
+}
+
+main,
+section,
+footer {
+  width: 100vw;
+}
+
+main {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: antiquewhite;
+}
+
+a:hover {
+  color: brown;
+}
+
+#account-finder {
+  text-align: center;
+  /* transition: transform 1s ease; */
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin: 0 auto 1.5rem;
+  transition: display 1s ease;
+}
+
+form {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.input-group {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.input-group i {
+  position: absolute;
+  top: 11px;
+  left: 13px;
+  font-size: 1.5rem;
+  color: black;
+}
+
+#username {
+  height: 3rem;
+  width: 100%;
+  border: 0;
+  border-radius: 3rem;
+  margin: 0 auto;
+  padding-left: 3rem;
+  font-size: 1.25rem;
+}
+
+#back {
+  position: absolute;
+  top: .75vh;
+  left: 20vw;
+  font-size: 2rem;
+}
+
+.card {
+  width: 50vw;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #320b5f;
+  box-shadow: 0 0 10px 5px #955dc1;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.wrap,
+#last-update {
+  margin-left: 1rem;
+}
+
+.card .row img {
+  width: 20%;
+  border-radius: 50%;
+  border: .2rem white solid;
+}
+
+#details {
+  margin-top: 1rem;
+}
+
+.last-update {
+  font-style: italic;
+}
+
+.row.analytics {
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  justify-content: space-evenly;
+}
+
+.wrap.project {
+  margin-left: 0;
+  width: 300px;
+}
+
+.project-card {
+  margin: 1rem 0;
+  padding: .5rem;
+  line-height: 1.5;
+  border: .1rem white solid;
+  border-radius: .5rem;
+  background-color: #020024;
+  box-shadow: 0 0 5px 2px #7f3db2;
+}
+
+.chart-box {
+  width: 300px;
+}
+
+footer {
+  text-align: center;
+  color: rgba(2, 0, 36, 1)
+}
+
+.move-up {
+  position: absolute;
+  transform: translateY(-40vh);
+}
+
+.disappear {
+  display: none;
+}
+
+@media (600px < width < 900px) {
+  form {
+    width: 80%;
+  }
+
+  .card {
+    width: 75vw;
+  }
+}
+
+@media (width < 600px) {
+  form {
+    width: 100%;
+  }
+
+  .card {
+    width: 90vw;
+  }
+}
+
+@media (width < 490px) {
+  body {
+    font-size: 10px;
+  }
+
+  .input-group i {
+    position: absolute;
+    top: 8px;
+    left: 9px;
+    font-size: 1rem;
+    color: black;
+  }
+
+  #username {
+    height: 2rem;
+    width: 100%;
+    border: 0;
+    border-radius: 2rem;
+    margin: 0 auto;
+    padding-left: 2rem;
+    font-size: 1rem;
+  }
+
+  .row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .wrap {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .wrap.project {
+    width: 90%;
+  }
+
+  .project-card {
+    width: 75%;
+    margin: .5rem 0;
+    padding: .25rem;
+    line-height: 1.125;
+  }
+
+  .chart-box {
+    display: none;
+  }
+}
