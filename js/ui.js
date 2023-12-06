@@ -44,8 +44,8 @@ function accountCard({ login, avatar_url, name, location, bio, updated_at, html_
   profilePhoto.setAttribute('src', avatar_url)
   profilePhoto.setAttribute('alt', `Profile photo of ${login}`)
 
-  nameHeader.textContent = name
-  nameHeader.innerHTML += ` <small>(${location})</small>`
+  nameHeader.textContent = name ?? login
+  nameHeader.innerHTML += ` <small>(${location ?? 'Planet Earth'})</small>`
 
   bioParagraph.textContent = bio
 
